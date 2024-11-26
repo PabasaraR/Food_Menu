@@ -17,7 +17,7 @@ const Menu = () => {
   };
 
   const handleModalSubmit = () => {
-    if (email === "admin@gmail.com" && password === "1001") {
+    if (email === "admin@gmail.com" && password === "Grand5#") {
       navigate("/upload");
       toast.success("Login successful!");
     } else {
