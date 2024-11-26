@@ -49,10 +49,10 @@ const Menu = () => {
         <h1 className="text-4xl font-bold text-white">Menu</h1>
       </header>
 
-      <div className="container flex flex-col items-center mx-auto max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 rounded-lg shadow-lg">
+      <div className="container flex flex-col items-center mx-auto h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 rounded-lg shadow-lg">
         {isLoad ? (
           imageList.map((image, index) => (
-            <div key={index} className="p-4 h-[80vh]">
+            <div key={index} className="p-4 h-[]">
               <div className="relative">
                 <img
                   src={image.url}
