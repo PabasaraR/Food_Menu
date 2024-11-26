@@ -33,10 +33,12 @@ const ImageUploadPage = () => {
     const fetchImages = async () => {
       try {
         const snapshot = await getDocs(collection(firestore, "images"));
+        console.log("Snapshot:", snapshot);
         const images = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
+        console.log("Images:", images);
         setImageList(images);
       } catch (error) {
         console.error("Error fetching images:", error);

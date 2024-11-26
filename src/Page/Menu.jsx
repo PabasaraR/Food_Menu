@@ -23,6 +23,7 @@ const Menu = () => {
     const fetchImages = async () => {
       try {
         const snapshot = await getDocs(collection(firestore, "images"));
+        console.log(snapshot);
         const images = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),

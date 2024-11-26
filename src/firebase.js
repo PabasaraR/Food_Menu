@@ -1,10 +1,8 @@
-// firebase.js
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-// Your Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyBUxJD4SfH-uDSTytrPjxWABxVzbU5WK6M",
   authDomain: "menu-d4436.firebaseapp.com",
@@ -15,10 +13,8 @@ const firebaseConfig = {
   measurementId: "G-DJPXV73KML",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Get a reference to the storage and firestore
 const auth = getAuth(app);
 const firestore = getFirestore(app);
 const storage = getStorage(app);
